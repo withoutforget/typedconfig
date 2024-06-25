@@ -4,6 +4,7 @@
 /*
 First example of typedconfig
 requirements: C++20
+gcc build-script: g++ .\example\example1.cpp -o .\build\a.exe -O3 --std=c++20 -I..\typedconfig\ -Wall -Werror -Wpedantic
 */
 
 #include "typedconfig/number_types.h"
