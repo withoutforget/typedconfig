@@ -1,6 +1,3 @@
-# Example & Usage
-
-```cpp
 /*
 First example of typedconfig
 requirements: C++20
@@ -42,12 +39,3 @@ int main() try {
 catch (std::exception& e) {
 	std::cout << std::format("e.what(): {}\n\n", e.what());
 }
-```
-
-Output should be
-```
-str:hello=world
-boolean:test=0
-f32:f32_var=14.1592655
-u64:very long number=100000000000000
-```

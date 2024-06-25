@@ -46,7 +46,7 @@ namespace typedconfig {
 			while (true) {
 				auto next_pos = data.find(delimiter, last_position + 1);
 				if (next_pos == std::string_view::npos) {
-					auto&& [type, name, value] = m_formatter->deserialize(data.substr(last_position, data.size() - last_position - 1));
+					auto&& [type, name, value] = m_formatter->deserialize(data.substr(last_position, data.size() - last_position));
 					append(var_manager::instance().construct(type, name, value));
 					break;
 				}
